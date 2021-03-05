@@ -60,10 +60,14 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           elevation: 1,
           backgroundColor: primaryColor,
-          title: Text(widget.title),
+          title: Text(widget.title,
+              style: fontBlack.copyWith(
+                  fontSize: 20, fontWeight: FontWeight.bold)),
           centerTitle: false,
           actions: <Widget>[
             IconButton(
+              color: Colors.black,
+              iconSize: 30,
               icon: Icon(Icons.history),
               onPressed: () {
                 _navigateAndDisplayHistory(context);

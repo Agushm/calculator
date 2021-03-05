@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kalkulator/theme.dart';
 
 class NumberDisplay extends StatelessWidget {
   NumberDisplay({this.value: ''});
@@ -27,7 +28,8 @@ class NumberDisplay extends StatelessWidget {
           children: <Widget>[
             Text(
               value,
-              style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+              style:
+                  fontBlack.copyWith(fontSize: 40, fontWeight: FontWeight.bold),
             ),
           ],
           mainAxisAlignment: MainAxisAlignment.end,
